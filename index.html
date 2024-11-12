@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML, CSS, and JavaScript Example</title>
+    <style>
+        /* CSS for styling the page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        ul, ol {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            display: table; /* Default display is table */
+        }
+        table, th, td {
+            border: 1px solid #333;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Protein Information</h1>
+    
+    <h2>protein List</h2>
+    
+    <!-- Unordered list -->
+    <ul>
+        <li>egg</li>
+        <li>paneer</li>
+        <li>chicken</li>
+        <li>peanuts</li>
+    </ul>
+    
+    <h2>Top 3 Protein</h2>
+    
+    <!-- Ordered list -->
+    <ol>
+        <li>egg</li>
+        <li>chicken</li>
+        <li>panner</li>
+    </ol>
+    
+    <h2>Protein Nutritional Information</h2>
+    
+    <!-- Table with 4 columns and 5 rows -->
+    <table id="nutritionTable">
+        <tr>
+            <th>Protein</th>
+            <th>Calories</th>
+            <th>protein g (%)</th>
+            <th>Fiber (g)</th>
+        </tr>
+        <tr>
+            <td>egg(1)</td>
+            <td>155g</td>
+            <td>6g</td>
+            <td>0g</td>
+        </tr>
+        <tr>
+            <td>paneer(100g)</td>
+            <td>96g</td>
+            <td>15g</td>
+            <td>2.6g</td>
+        </tr>
+        <tr>
+            <td>chicken(100g)</td>
+            <td>100g</td>
+            <td>31g</td>
+            <td>0g</td>
+        </tr>
+        <tr>
+            <td>peanuts(100g)</td>
+            <td>567g</td>
+            <td>25.8g</td>
+            <td>8.5g</td>
+        </tr>
+    </table>
+    
+    <!-- Button to toggle table visibility -->
+    <button class="button" onclick="toggleTable()">Toggle Table Visibility</button>
+
+    <!-- JavaScript to toggle table visibility -->
+    <script>
+        function toggleTable() {
+            const table = document.getElementById('nutritionTable');
+            if (table.style.display === 'none') {
+                table.style.display = 'table';
+            } else {
+                table.style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+</html>
